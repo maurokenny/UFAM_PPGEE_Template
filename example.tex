@@ -1,0 +1,124 @@
+% This code is based on Coppetex project
+% http://coppetex.sourceforge.net/
+% created by Vicente H. F. Batista, George O. Ainsworth Jr. and Paulo 
+% Laranjeira da C. Lage 
+%
+% Author: Mauro Freitas
+%
+
+\documentclass[msc,numbers]{ufamppgee}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+\makelosymbols
+\makeloabbreviations
+
+\begin{document}
+  \title{Título da Tese}
+  \foreigntitle{Thesis Title}
+  \author{Nome do Autor}{Sobrenome}
+  \advisor{Prof.}{Nome do Primeiro Orientador}{Sobrenome}{D.Sc.}
+  \advisor{Prof.}{Nome do Segundo Orientador}{Sobrenome}{Ph.D.}
+  \advisor{Prof.}{Nome do Terceiro Orientador}{Sobrenome}{D.Sc.}
+
+  \examiner{Prof.}{Nome do Primeiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Segundo Examinador Sobrenome}{Ph.D.}
+  \examiner{Prof.}{Nome do Terceiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Quarto Examinador Sobrenome}{Ph.D.}
+  \department{PEE}
+  \date{02}{2016}
+
+  \keyword{Primeira palavra-chave}
+  \keyword{Segunda palavra-chave}
+  \keyword{Terceira palavra-chave}
+
+  \maketitle
+
+  \frontmatter
+  \dedication{A alguém cujo valor é digno desta dedicatória.}
+
+  \chapter*{Agradecimentos}
+
+  Gostaria de agradecer a todos.
+
+  \begin{abstract}
+
+  Apresenta-se, nesta tese, é  ...
+
+  \end{abstract}
+
+  \begin{foreignabstract}
+
+  In this work, we present ...
+
+  \end{foreignabstract}
+
+  \tableofcontents
+  \listoffigures
+  \listoftables
+  \printlosymbols
+  \printloabbreviations
+
+  \mainmatter
+  \chapter{Introdução}
+
+  Toda abreviatura deve ser definida antes de
+  utilizada.\abbrev{UFAM}{Universidade Federal do Amazonas}
+
+  Do mesmo modo, é imprescindível definir os símbolos, tal como o
+  conjunto dos números reais $\mathbb{R}$ e o conjunto vazio $\emptyset$.
+  \symbl{$\mathbb{R}$}{Conjunto dos números reais}
+  \symbl{$\emptyset$}{Conjunto vazio}
+  Para gerar abreviações e símbolos: 
+  
+  makeindex -s coppe.ist -o example.lab example.abx
+  
+  makeindex -s coppe.ist -o example.los example.syx
+
+  \chapter{Revisão Bibliográfica}
+
+  Para ilustrar a completa adesão ao estilo de citações e listagem de
+  referências bibliográficas, a Tabela~\ref{tab:citation} apresenta citações de alguns dos trabalhos, utilizando o estilo numérico.
+
+  \begin{table}[h]
+  \caption{Exemplos de citações utilizando o comando padrão
+    \texttt{\textbackslash cite} do \LaTeX\ e
+    o comando \texttt{\textbackslash citet},
+    fornecido pelo pacote \texttt{natbib}.}
+  \label{tab:citation}
+  \centering
+  {\footnotesize
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Tipo da Publicação & \verb|\cite| & \verb|\citet|\\
+    \hline
+    Livro & \cite{book-example} & \citet{book-example}\\
+    Artigo & \cite{article-example} & \citet{article-example}\\
+    Relat\'orio & \cite{techreport-example} & \citet{techreport-example}\\
+    Relat\'orio & \cite{techreport-exampleIn} & \citet{techreport-exampleIn}\\
+    Anais de Congresso & \cite{inproceedings-example} &
+      \citet{inproceedings-example}\\
+    S\'eries & \cite{incollection-example} & \citet{incollection-example}\\
+    Em Livro & \cite{inbook-example} & \citet{inbook-example}\\
+    Disserta{\c c}\~ao de mestrado & \cite{mastersthesis-example} &
+      \citet{mastersthesis-example}\\
+    Tese de doutorado & \cite{phdthesis-example} & \citet{phdthesis-example}\\
+    \hline
+  \end{tabular}}
+  \end{table}
+
+  \chapter{Método Proposto}
+  \chapter{Resultados e Discussões}
+  \chapter{Conclusões}
+
+  \backmatter
+  \bibliographystyle{coppe-unsrt}
+  \bibliography{example}
+
+  \appendix
+  \chapter{Algumas Demonstrações}
+\end{document}
+%% 
+%%
+%% End of file `example.tex'.
