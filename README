@@ -1,3 +1,12 @@
+This project is based on CoppeTeX package
+http://coppetex.sourceforge.net/
+Many instructions can not work as the original project
+This project provides a LaTeX document class suitable for writing academic
+dissertations and thesis according to the formatting rules established by
+Universidade Federal do Amazonas/Programa de Pós-graduação em Engenharia Elétrica.
+
+---------------------------------------------------
+From now on, the original README:
 This is the README file for the CoppeTeX package.
 
 Introduction
